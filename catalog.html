@@ -3,18 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/icons/favicon/32.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/icons/Favicon/180.svg">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body>
     <header>
       <nav>
-      <a href='index.html'><img src='img/nerds-logo.svg' alt='Логотип дизайн-студии Нёрдс'></a>
+      <a href='index.html'><img src='img/logo/nerds-logo.svg' width='160' height='65' alt='Логотип дизайн-студии Нёрдс'></a>
         <ul>
           <li><a href='blank.html'>Студия</a></li>
           <li><a href='blank.html'>Клиенты</a></li>
           <li><a href='catalog.html'>Магазин</a></li>
           <li><a href='blank.html'>Контакты</a></li>
         </ul>
-        <img src='img/cart-icon.svg' alt='Корзина'>
+        <img src='img/icons/cart-icon.svg' width='15' height='15' alt='Корзина'>
         <a href='blank.html'>Корзина</a>
       </nav>
     </header>
@@ -36,7 +40,7 @@
                     <legend>Сетка:</legend>
                     <ul>
                         <li>
-                            <input type='radio' name='grid' id='adaptive' value='adaptive'>
+                            <input type='radio' name='grid' id='adaptive' value='adaptive' checked>
                             <label for='adaptive'>Адаптивная</label>
                         </li>
                         <li>
@@ -80,67 +84,37 @@
             <div>
                 <h3>Сортировать:</h3>
                 <ul>
-                    <li>По цене</li>
-                    <li>По типу</li>
-                    <li>По названию</li>
+                    <li><a>По цене</a></li>
+                    <li><a href='#'>По типу</a></li>
+                    <li><a href='#'>По названию</a></li>
+                    <li><a>Вверх</a></li>
+                    <li><a href='#'>Вниз</a></li>
                 </ul>
-                <img src='https://via.placeholder.com/11x10' alt='вниз'>
-                <img src='https://via.placeholder.com/11x10' alt='вверх'>
             </div>
             <section>
                 <ul>
                     <li>
-                        <div>
-                            <img src='https://via.placeholder.com/14x14' alt='слайд1'>
-                            <img src='https://via.placeholder.com/14x14' alt='слайд2'>
-                            <img src='https://via.placeholder.com/14x14' alt='слайд3'>
-                        </div>
-                        <img src='https://via.placeholder.com/358x578' alt='Сайт Sedona'>
+                        <img src='img/content/mask-group-sedona.jpg' width='358' height='578' alt='Сайт Sedona'>
                         <div>
                             <h3>Sedona</h3>
                             <p>Информационный сайт для туристов</p>
-                            <button>9900 ₽</button>
+                            <a href='#'>9900 ₽</a>
                         </div>
                     </li>
                     <li>
-                        <div>
-                            <img src='https://via.placeholder.com/14x14' alt='слайд1'>
-                            <img src='https://via.placeholder.com/14x14' alt='слайд2'>
-                            <img src='https://via.placeholder.com/14x14' alt='слайд3'>
-                        </div>
-                        <img src='https://via.placeholder.com/358x578' alt='Сайт Pink'>
+                        <img src='img/content/mask-group-pink.jpg' width='358' height='578' alt='Сайт Pink'>
                     </li>
                     <li>
-                        <div>
-                            <img src='https://via.placeholder.com/14x14' alt='слайд1'>
-                            <img src='https://via.placeholder.com/14x14' alt='слайд2'>
-                            <img src='https://via.placeholder.com/14x14' alt='слайд3'>
-                        </div>
-                        <img src='https://via.placeholder.com/358x578' alt='Сайт Borodinski'>
+                        <img src='img/content/mask-group-borodionski.jpg' width='358' height='578' alt='Сайт Borodinski'>
                     </li>
                     <li>
-                        <div>
-                            <img src='https://via.placeholder.com/14x14' alt='слайд1'>
-                            <img src='https://via.placeholder.com/14x14' alt='слайд2'>
-                            <img src='https://via.placeholder.com/14x14' alt='слайд3'>
-                        </div>
-                        <img src='https://via.placeholder.com/358x578' alt='Сайт Mishka'>
+                        <img src='img/content/mask-group-mishka.jpg' width='358' height='578' alt='Сайт Mishka'>
                     </li>
                     <li>
-                        <div>
-                            <img src='https://via.placeholder.com/14x14' alt='слайд1'>
-                            <img src='https://via.placeholder.com/14x14' alt='слайд2'>
-                            <img src='https://via.placeholder.com/14x14' alt='слайд3'>
-                        </div>
-                        <img src='https://via.placeholder.com/358x578' alt='Сайт A+'>
+                        <img src='img/content/mask-group-aplus.jpg' width='358' height='578' alt='Сайт A+'>
                     </li>
                     <li>
-                        <div>
-                            <img src='https://via.placeholder.com/14x14' alt='слайд1'>
-                            <img src='https://via.placeholder.com/14x14' alt='слайд2'>
-                            <img src='https://via.placeholder.com/14x14' alt='слайд3'>
-                        </div>
-                        <img src='https://via.placeholder.com/358x578' alt='Сайт Кваст'>
+                        <img src='img/content/mask-group-kvast.jpg' width='358' height='578' alt='Сайт Кваст'>
                     </li>
                 </ul>
                 <div>
@@ -156,8 +130,8 @@
         <footer>
             <section>
               <h2>Контакты</h2>
-              <img src='https://via.placeholder.com/1440x416' alt='Карта'>
-              <img src='https://via.placeholder.com/231x190' alt='Маркер'>
+              <img src='img/content/map.jpg' width='1440' height='416' alt='Карта'>
+              <img src='img/content/map-marker.png' width='231' height='190' alt='Маркер'>
               <article>
                   <h3>Nёrds design studio</h3>
                   <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<p>
@@ -168,9 +142,9 @@
             <section>
               <h2>Социальные сети</h2>
               <ul>
-                <li><a href='#'><img src='img/vk-icon.svg' alt='vk'></a></li>
-                <li><a href='#'><img src='img/fb-icon.svg' alt='facebook'></a></li>
-                <li><a href='#'><img src='img/insta-icon.svg' alt='instagram'></a></li>
+                <li><a href='#'><img src='img/social/vk-icon.svg' width='26' height='15' alt='vk'></a></li>
+                <li><a href='#'><img src='img/social/fb-icon.svg' width='12' height='22' alt='facebook'></a></li>
+                <li><a href='#'><img src='img/social/insta-icon.svg' width='21' height='21' alt='instagram'></a></li>
               </ul>
                 <p>Давайте дружить, это выгодно!</p>
                 <p>Скидка 10% для друзей из социальных сетей.</p>
