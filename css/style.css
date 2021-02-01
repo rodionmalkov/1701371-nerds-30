@@ -1,0 +1,266 @@
+/* Variables */
+
+:root {
+    --basic-grey: #EEEEEE;
+    --hover-grey: #DFDFDF;
+    --focus-grey: #D5D5D5;
+    --basic-red: #FB565A;
+    --hover-red: #E74246;
+    --focus-red: #D7373B;
+    --basic-green: #00CA74;
+    --hover-green: #00BC6C;
+    --focus-green: #00AA62;
+    --basic-orange: #EFC84A;
+    --hover-orange: #EAB534;
+    --focus-orange: #E5A722;
+
+    --basic-black: #000000;
+    --basic-white: #FFFFFF;
+    --main-grey: #283136;
+    --extra-grey: #666666;
+    --light-grey: #E1E1E1;
+  }
+  
+/* Global */
+
+body {
+    min-width: 960px;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    color: var(--main-grey);
+    background-color: var(--basic-white);
+  }
+
+a {
+    text-decoration: none;
+  }
+  
+img {
+    max-width: 100%;
+    height: auto;
+  }
+
+/* button */
+
+.button {
+    text-transform: uppercase;
+    color: var(--basic-white);
+    background-color: var(--basic-red);
+    border-radius: 3px;
+}
+
+.button:hover {
+    background-color: var(--hover-red);
+}
+
+.button:focus {
+    background-color: var(--focus-red);
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.button-green {
+    color: var(--basic-white);
+    background-color: var(--basic-green);
+}
+
+.button-green:hover {
+    background-color: var(--hover-green);
+}
+
+.button-green:focus {
+    background-color: var(--focus-green);
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.button-orange {
+    color: var(--basic-white);
+    background-color: var(--basic-orange);
+}
+
+.button-orange:hover {
+    background-color: var(--hover-orange);
+}
+
+.button-orange:focus {
+    background-color: var(--focus-orange);
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+/* Main navigation */
+  
+.main-navigation {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    color: var(--basic-black);
+    align-items: center;
+    text-transform: uppercase;
+    background-color: var(--basic-grey);
+}
+
+.site-navigation {
+    list-style: none;
+}
+
+/* User navigation */
+
+
+.main-header a {
+    color: var(--basic-black);
+}
+
+.main-header a:hover {
+    color: var(--basic-red);
+}
+
+.main-header a:focus {
+    color: var(--basic-black);
+    opacity: 0.3;
+}
+
+/* slider */
+
+.slider {
+    background-color: var(--basic-grey);
+}
+
+.slider-content h2{
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 55px;
+}
+
+/* products */
+
+.prodicts-list {
+    list-style: none;
+}
+
+.products-item h3{
+    text-transform: uppercase;
+}
+
+/* about us */
+
+
+
+.aboutus p:nth-child(2){
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 45px;
+    color: var(--basic-black);
+}
+
+.aboutus p:nth-child(4){
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: var(--basic-black);
+}
+
+.aboutus-table {
+    text-align: center;
+}
+
+.aboutus-table tr:nth-child(2) {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: var(--basic-black);
+}
+
+.aboutus-table tr:nth-child(3) {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 64px;
+    color: var(--basic-black);
+}
+
+.aboutus-table tr:nth-child(4) {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+
+/* partners */
+
+.partners-list {
+    list-style: none;
+}
+
+.partners-item {
+    opacity: 0.2;
+}
+
+.partners-item:hover {
+    opacity: 1;
+}
+
+.partners-item a:focus {
+    opacity: 0.1;
+}
+
+/* footer */
+
+.footer-contacts {
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--extra-grey)
+}
+
+.footer-contacts h3{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--basic-black);
+}
+
+.footer-phone {
+    color: inherit;
+}
+
+.social-list {
+    list-style: none;
+     
+}
+
+.social-list a {
+    background-color: var(--light-grey);
+
+}
+
+.social-list a:hover {
+    background-color: var(--hover-red);
+}
+
+.social-list a:focus {
+    background-color: var(--focus-red);
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.footer-slogan {
+    font-size: 16px;
+    line-height: 22px;
+    color: #444444;
+}
+
+.footer-slogan p:nth-child(1) {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 36px;
+    color: var(--basic-black);
+}
+
+
+
+
