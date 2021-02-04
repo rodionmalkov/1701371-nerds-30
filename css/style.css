@@ -30,7 +30,7 @@ body {
     font-family: "Roboto", Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
-    font-weight: 700;
+    font-weight: 400;
     color: var(--main-grey);
     background-color: var(--basic-white);
   }
@@ -47,10 +47,14 @@ img {
 /* button */
 
 .button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
     text-transform: uppercase;
     color: var(--basic-white);
     background-color: var(--basic-red);
     border-radius: 3px;
+
 }
 
 .button:hover {
@@ -141,14 +145,17 @@ img {
 }
 
 .products-item h3{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
     text-transform: uppercase;
+    color: var(--basic-black);
 }
 
 /* about us */
 
 
-
-.aboutus p:nth-child(2){
+.aboutus-title {
     font-style: normal;
     font-weight: 500;
     font-size: 45px;
@@ -156,7 +163,7 @@ img {
     color: var(--basic-black);
 }
 
-.aboutus p:nth-child(4){
+.aboutus-subtitle {
     font-weight: bold;
     font-size: 16px;
     line-height: 24px;
@@ -166,9 +173,13 @@ img {
 
 .aboutus-table {
     text-align: center;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--main-grey);
 }
 
-.aboutus-table tr:nth-child(2) {
+.table-title {
     font-weight: bold;
     font-size: 16px;
     line-height: 24px;
@@ -176,17 +187,12 @@ img {
     color: var(--basic-black);
 }
 
-.aboutus-table tr:nth-child(3) {
+.table-numbers {
     font-style: normal;
     font-weight: bold;
     font-size: 45px;
     line-height: 64px;
     color: var(--basic-black);
-}
-
-.aboutus-table tr:nth-child(4) {
-    font-size: 16px;
-    line-height: 18px;
 }
 
 
