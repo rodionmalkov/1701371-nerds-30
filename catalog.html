@@ -1,42 +1,45 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-    <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="img/icons/favicon/32.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="img/icons/Favicon/180.svg">
-    <link rel="manifest" href="manifest.webmanifest">
-  </head>
-  <body>
-    <header>
-      <nav>
-      <a href='index.html'><img src='img/logo/nerds-logo.svg' width='160' height='65' alt='Логотип дизайн-студии Нёрдс'></a>
-        <ul>
-          <li><a href='blank.html'>Студия</a></li>
-          <li><a href='blank.html'>Клиенты</a></li>
-          <li><a href='catalog.html'>Магазин</a></li>
-          <li><a href='blank.html'>Контакты</a></li>
-        </ul>
-        <img src='img/icons/cart-icon.svg' width='15' height='15' alt='Корзина'>
-        <a href='blank.html'>Корзина</a>
-      </nav>
-    </header>
+    <head>
+        <meta charset="utf-8">
+        <title>HTML Academy: Нёрдс</title>
+        <link rel="icon" href="favicon.ico">
+        <link rel="icon" href="img/icons/favicon/32.svg" type="image/svg+xml">
+        <link rel="apple-touch-icon" href="img/icons/Favicon/180.svg">
+        <link rel="manifest" href="manifest.webmanifest">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+      </head>
+      <body class='page-body'>
+        <header class='main-header'>
+          <nav class='main-navigation'>
+          <img class='main-header-logo' src='img/logo/nerds-logo.svg' width='160' height='65' alt='Логотип дизайн-студии Нёрдс'>
+            <ul class="site-navigation">
+              <li><a href='blank.html'>Студия</a></li>
+              <li><a href='blank.html'>Клиенты</a></li>
+              <li><a href='catalog.html'>Магазин</a></li>
+              <li><a href='blank.html'>Контакты</a></li>
+            </ul>
+            <img src='img/icons/cart-icon.svg' width='15' height='15' alt='Корзина'>
+            <a href='blank.html'>Корзина</a>
+          </nav>
+        </header>
     <main>
-        <section>
+        <section class='page-subtitle'>
             <h1>Магазин готовых шаблонов</h1>
         </section>
-        <section>
+        <section class='product-filter'>
             <h2>Фильтр товаров</h2>
             
-            <form method="get" action="https://echo.htmlacademy.ru">
-                <fieldset>
+            <form class='form-filter' method="get" action="https://echo.htmlacademy.ru">
+                <fieldset class='filter-price'>
                     <legend>Стоимость:</legend>
                     <input type='range'>
                     <p>От</p><output>0</output>
                     <p>До</p><output>15000</output>
                 </fieldset>
-                <fieldset>
+                <fieldset class='filter-grid'>
                     <legend>Сетка:</legend>
                     <ul>
                         <li>
@@ -53,7 +56,7 @@
                         </li>
                     </ul>
                 </fieldset>
-                <fieldset>
+                <fieldset class='filter-features'>
                     <legend>Особенности:</legend>
                     <ul>
                         <li><input type='checkbox' name='features' id='slider' value='slider' checked>
@@ -77,28 +80,28 @@
                         </li>
                     </ul> 
                 </fieldset>
-                <button type="submit">Показать</button>
+                <button class='button button-grey' type="submit">Показать</button>
               </form>
         </section>
-        <section>
-            <div>
+        <section class='catalog'>
+            <div class='wrapper-breadcrumbs'>
                 <h3>Сортировать:</h3>
-                <ul>
-                    <li><a>По цене</a></li>
+                <ul class='breadcrumbs'>
+                    <li class='breadcrumbs-current'>По цене</li>
                     <li><a href='#'>По типу</a></li>
                     <li><a href='#'>По названию</a></li>
-                    <li><a>Вверх</a></li>
-                    <li><a href='#'>Вниз</a></li>
+                    <li class='breadcrumbs-current'>Вниз</li>
+                    <li><a href='#'>Вверх</a></li>
                 </ul>
             </div>
-            <section>
-                <ul>
+            <section class='catalog-list'>
+                <ul class='catalog-item'>
                     <li>
                         <img src='img/content/mask-group-sedona.jpg' width='358' height='578' alt='Сайт Sedona'>
-                        <div>
-                            <h3>Sedona</h3>
-                            <p>Информационный сайт для туристов</p>
-                            <a href='#'>9900 ₽</a>
+                        <div class='list-container'>
+                            <h3 class='container-heading'>Sedona</h3>
+                            <p class='container-description'>Информационный сайт для туристов</p>
+                            <a class='button' href='#'>9900 ₽</a>
                         </div>
                     </li>
                     <li>
@@ -117,9 +120,9 @@
                         <img src='img/content/mask-group-kvast.jpg' width='358' height='578' alt='Сайт Кваст'>
                     </li>
                 </ul>
-                <div>
-                    <ul>
-                        <li><a>1</a></li>
+                <div class='pagination'>
+                    <ul class='pagination-list'>
+                        <li class='pagination-current'>1</li>
                         <li><a href='#'>2</a></li>
                         <li><a href='#'>3</a></li>
                         <li><a href='#'>Следующая</a></li>
@@ -127,27 +130,29 @@
                 </div>
             </section>
         </section>
-        <footer>
-            <section>
+        <footer class='main-footer'>
+            <section class='footer-contacts'>
               <h2>Контакты</h2>
               <img src='img/content/map.jpg' width='1440' height='416' alt='Карта'>
               <img src='img/content/map-marker.png' width='231' height='190' alt='Маркер'>
               <article>
                   <h3>Nёrds design studio</h3>
                   <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<p>
-                  <p><a href='tel:+78122757575'>тел. +7 (812) 275-75-75</a></p>
-                  <a href='#'>Напишите нам</a>
+                  <p><a class='footer-phone' href='tel:+78122757575'>тел. +7 (812) 275-75-75</a></p>
+                  <a class='button' href='#'>Напишите нам</a>
               </article>
             </section>
-            <section>
+            <section class='footer-social'>
               <h2>Социальные сети</h2>
-              <ul>
+              <ul class='social-list'>
                 <li><a href='#'><img src='img/social/vk-icon.svg' width='26' height='15' alt='vk'></a></li>
                 <li><a href='#'><img src='img/social/fb-icon.svg' width='12' height='22' alt='facebook'></a></li>
                 <li><a href='#'><img src='img/social/insta-icon.svg' width='21' height='21' alt='instagram'></a></li>
               </ul>
-                <p>Давайте дружить, это выгодно!</p>
-                <p>Скидка 10% для друзей из социальных сетей.</p>
+                <div class="footer-slogan">
+                  <p class='slogan-desc'>Давайте дружить, это выгодно!</p>
+                  <p>Скидка 10% для друзей из социальных сетей.</p>
+                </div>
             </section>
           </footer>
     </main>

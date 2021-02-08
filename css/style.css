@@ -44,6 +44,13 @@ img {
     height: auto;
   }
 
+
+/* page */
+
+.page-subtitle {
+    background-color: var(--basic-grey);
+}
+
 /* button */
 
 .button {
@@ -91,7 +98,20 @@ img {
 
 .button-orange:focus {
     background-color: var(--focus-orange);
-    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);  
+}
+
+.button-grey {
+    color: var(--basic-black);
+    background-color: var(--basic-grey);
+}
+
+.button-grey:hover {
+    background-color: var(--hover-grey);
+}
+
+.button-grey:focus {
+    background-color: var(--focus-grey);
 }
 
 /* Main navigation */
@@ -260,13 +280,94 @@ img {
     color: #444444;
 }
 
-.footer-slogan p:nth-child(1) {
+.slogan-desc {
     font-weight: bold;
     font-size: 36px;
     line-height: 36px;
     color: var(--basic-black);
 }
 
+/* form filter */
 
+.form-filter legend{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.form-filter ul{
+    list-style: none;
+    text-transform: uppercase;
+}
+
+/* catalog */
+
+.wrapper-breadcrumbs {
+    text-transform: uppercase;
+}
+
+
+.breadcrumbs {
+    list-style: none;
+}
+
+.breadcrumbs a{
+    color: var(--basic-black);
+    opacity: 0.3;
+}
+
+.breadcrumbs a:hover{
+    opacity: 0.6;
+}
+
+.breadcrumbs a:focus{
+    opacity: 1;
+}
+
+.catalog-item {
+    list-style: none;
+}
+
+.list-container {
+    background-color: var(--basic-grey);
+}
+
+.container-heading {
+    color: var(--basic-black);
+    text-transform: uppercase;
+}
+
+.container-description {
+    color: var(--extra-grey);
+    line-height: 18px;
+}
+
+
+.pagination-list {
+    list-style: none;
+}
+
+.pagination-list a{
+    color: var(--basic-black);
+    background: var(--basic-grey);
+    border-radius: 3px;
+}
+
+.pagination-list a:hover{
+    background: var(--hover-grey);
+    border-radius: 3px;
+}
+
+.pagination-list a:focus{
+    background: var(--focus-grey);
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+    border-radius: 3px;
+}
+
+.pagination-current {
+    background: var(--basic-white);
+    border: 3px solid #DBDBDB;
+    border-radius: 3px;
+}
 
 
