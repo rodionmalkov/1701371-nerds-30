@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class='page' lang="ru">
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Нёрдс</title>
@@ -13,23 +13,17 @@
       </head>
       <body class='page-body'>
         <header class='main-header'>
-            <nav class='main-navigation'>
-              <div class="main-header-bar">
-                <div class='main-navigation-wrapper'>
-            <a href='index.html'><img class='main-header-logo' src='img/logo/nerds-logo.svg' width='160' height='65' alt='Логотип дизайн-студии Нёрдс'></a>
-            <ul class="site-navigation">
-              <li><a href='blank.html'>Студия</a></li>
-              <li><a href='blank.html'>Клиенты</a></li>
-              <li><a href='catalog.html' class='nav-active'>Магазин</a></li>
-              <li><a href='blank.html'>Контакты</a></li>
-            </ul>
-            <div class='сart-panel'>
-                <img src='img/icons/cart-icon.svg' width='15' height='15' alt='Корзина'>
-                <a href='blank.html'>Корзина</a>
-            </div>
-                </div>
-            </div>
-          </nav>
+            <nav class="main-navigation main-navigation-wrapper">
+                <a href='index.html'><img class="main-header-logo" src="img/logo/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс"><ul class="site-navigation"></a>
+                            <li><a href="blank.html">Студия</a></li>
+                            <li><a href="blank.html">Клиенты</a></li>
+                            <li><a class='nav-active' href="catalog.html">Магазин</a></li>
+                            <li><a href="blank.html">Контакты</a></li>
+                        </ul>
+                        <div class="сart-panel">
+                            <a href="blank.html">Корзина</a>
+                        </div>
+            </nav>
             <section class='page-subtitle'>
                 <h1>Магазин готовых шаблонов</h1>
             </section>
@@ -37,7 +31,7 @@
     <main class='wrapper'>
         <div class='products-wrapper'>
             <section class='product-filter'>
-                <h2>Фильтр товаров</h2>
+                <h2 class='visually-hidden'>Фильтр товаров</h2>
                     <form class='form-filter' method="get" action="https://echo.htmlacademy.ru">
                         <fieldset class='filter-price'>
                             <legend>Стоимость:</legend>
@@ -133,43 +127,43 @@
                             <li class='pagination-current'>1</li>
                             <li><a href='#'>2</a></li>
                             <li><a href='#'>3</a></li>
-                            <li><a href='#'>Следующая</a></li>
+                            <li class='pagination-next'><a href='#'>Следующая</a></li>
                         </ul>
                     </div>
                 </section>
             </section>
         </div>
-        <footer class='main-footer'>
-            <section class='footer-contacts'>
-              <h2>Контакты</h2>
-              <img src='img/content/map.jpg' width='1440' height='416' alt='Карта'>
-              <img src='img/content/map-marker.png' width='231' height='190' alt='Маркер'>
-              <article>
-                  <h3>Nёrds design studio</h3>
-                  <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<p>
-                  <p><a class='footer-phone' href='tel:+78122757575'>тел. +7 (812) 275-75-75</a></p>
-                  <a class='button' href='#'>Напишите нам</a>
-              </article>
-            </section>
-            <section class='footer-social'>
-              <h2>Социальные сети</h2>
-              <div class='footer-wrapper'>
-                <div class='social-wrapper'>
-                  <ul class='social-list'>
-                    <li><a href='#'><img src='img/social/vk-icon.svg' width='26' height='15' alt='vk'></a></li>
-                    <li><a href='#'><img src='img/social/fb-icon.svg' width='12' height='22' alt='facebook'></a></li>
-                    <li><a href='#'><img src='img/social/insta-icon.svg' width='21' height='21' alt='instagram'></a></li>
-                  </ul>
-                </div>
-                <div class='slogan-wrapper'>
-                  <div class="footer-slogan">
-                    <p class='slogan-desc'>Давайте дружить, это выгодно!</p>
-                    <p>Скидка 10% для друзей из социальных сетей.</p>
-                  </div>
-                </div>
-              </div>
-            </section>
-          </footer>
     </main>
+    <footer class='main-footer'>
+        <section class='footer-contacts'>
+          <h2 class='visually-hidden'>Контакты</h2>
+          <img src='img/content/map.jpg' width='1440' height='416' alt='Карта'>
+          <img src='img/content/map-marker.png' width='231' height='190' alt='Маркер'>
+          <article>
+              <h3>Nёrds design studio</h3>
+              <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<p>
+              <p><a class='footer-phone' href='tel:+78122757575'>тел. +7 (812) 275-75-75</a></p>
+              <a class='button' href='#'>Напишите нам</a>
+          </article>
+        </section>
+        <section class='footer-social'>
+          <h2 class='visually-hidden'>Социальные сети</h2>
+          <div class='footer-wrapper'>
+            <div class='social-wrapper'>
+              <ul class='social-list'>
+                <li><a href='#'><img src='img/social/vk-icon.svg' width='26' height='15' alt='vk'></a></li>
+                <li><a href='#'><img src='img/social/fb-icon.svg' width='12' height='22' alt='facebook'></a></li>
+                <li><a href='#'><img src='img/social/insta-icon.svg' width='21' height='21' alt='instagram'></a></li>
+              </ul>
+            </div>
+            <div class='slogan-wrapper'>
+              <div class="footer-slogan">
+                <p class='slogan-desc'>Давайте дружить, это выгодно!</p>
+                <p>Скидка 10% для друзей из социальных сетей.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </footer>
     </body>
 </html>
