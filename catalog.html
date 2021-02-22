@@ -14,14 +14,15 @@
       <body class='page-body'>
         <header class='main-header'>
             <nav class="main-navigation main-navigation-wrapper">
-                <a href='index.html'><img class="main-header-logo" src="img/logo/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс"><ul class="site-navigation"></a>
+                <a href='index.html'><img class="main-header-logo" src="img/logo/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс"></a>
+                        <ul class="site-navigation">
                             <li><a href="blank.html">Студия</a></li>
                             <li><a href="blank.html">Клиенты</a></li>
                             <li><a class='nav-active' href="catalog.html">Магазин</a></li>
                             <li><a href="blank.html">Контакты</a></li>
                         </ul>
                         <div class="сart-panel">
-                            <a href="blank.html">Корзина</a>
+                            <a class="cart-link" href="blank.html">Корзина</a>
                         </div>
             </nav>
             <section class='page-subtitle'>
@@ -33,25 +34,39 @@
             <section class='product-filter'>
                 <h2 class='visually-hidden'>Фильтр товаров</h2>
                     <form class='form-filter' method="get" action="https://echo.htmlacademy.ru">
-                        <fieldset class='filter-price'>
+                        <fieldset class="filter-item">
                             <legend>Стоимость:</legend>
-                            <input type='range'>
-                            <p>От</p><output>0</output>
-                            <p>До</p><output>15000</output>
+                            <div class="range-filter">
+                              <div class="range-controls">
+                                <div class="scale">
+                                  <div class="bar" style="width: 30%; margin-left: 20%"></div>
+                                </div>
+                                <div class="toggle toggle-min" tabindex="0" style="left: 20%"></div>
+                                <div class="toggle toggle-max" tabindex="0" style="left: 50%"></div>
+                              </div>
+                              <div class="price-controls">
+                                <label class="min-price">
+                                  от <input class='visually-hidden' type="number" name="min-price" value="0">
+                                </label>
+                                <label class="max-price">
+                                  до <input class='visually-hidden' type="number" name="max-price" value="15000">
+                                </label>
+                              </div>
+                            </div>
                         </fieldset>
                         <fieldset class='filter-grid'>
                             <legend>Сетка:</legend>
                             <ul>
-                                <li>
-                                    <input type='radio' name='grid' id='adaptive' value='adaptive' checked>
+                                <li class="filter-option filter-checkbox">
+                                    <input class='visually-hidden filter-input-checkbox filter-input-radio' type='radio' name='grid' id='adaptive' value='adaptive' checked>
                                     <label for='adaptive'>Адаптивная</label>
                                 </li>
-                                <li>
-                                    <input type='radio' name='grid' id='fixed' value='fixed'>
+                                <li class="filter-option filter-checkbox">
+                                    <input class='visually-hidden filter-input-checkbox filter-input-radio' type='radio' name='grid' id='fixed' value='fixed'>
                                     <label for='fixed'>Фиксированная</label>
                                 </li>
-                                <li>
-                                    <input type='radio' name='grid' id='rubber' value='rubber'>
+                                <li class="filter-option filter-checkbox">
+                                    <input class='visually-hidden filter-input-checkbox filter-input-radio' type='radio' name='grid' id='rubber' value='rubber'>
                                     <label for='rubber'>Резиновая</label>
                                 </li>
                             </ul>
@@ -59,23 +74,24 @@
                         <fieldset class='filter-features'>
                             <legend>Особенности:</legend>
                             <ul>
-                                <li><input type='checkbox' name='features' id='slider' value='slider' checked>
+                                <li class="filter-option filter-checkbox">
+                                    <input class='visually-hidden  filter-feature-checkbox' type='checkbox' name='features' id='slider' value='slider' checked>
                                     <label for='slider'>Слайдер</label>
                                 </li>
-                                <li>
-                                    <input type='checkbox' name='features' id='block-advantage' value='block-advantage'>
+                                <li class="filter-option filter-checkbox">
+                                    <input class='visually-hidden filter-feature-checkbox' type='checkbox' name='features' id='block-advantage' value='block-advantage'>
                                     <label for='block-advantage'>Блок преимуществ</label>
                                 </li>
-                                <li>
-                                    <input type='checkbox' name='features' id='news' value='news' checked>
+                                <li class="filter-option filter-checkbox">
+                                    <input class='visually-hidden filter-feature-checkbox' type='checkbox' name='features' id='news' value='news' checked>
                                     <label for='news'>Новости</label>
                                 </li>
-                                <li>
-                                    <input type='checkbox' name='features' id='gallery' value='gallery'>
+                                <li class="filter-option filter-checkbox">
+                                    <input class='visually-hidden filter-feature-checkbox' type='checkbox' name='features' id='gallery' value='gallery'>
                                     <label for='gallery'>Галерея</label>
                                 </li>
-                                <li>
-                                    <input type='checkbox' name='features' id='basket' value='basket'>
+                                <li class="filter-option filter-checkbox">
+                                    <input class='visually-hidden filter-feature-checkbox' type='checkbox' name='features' id='basket' value='basket'>
                                     <label for='basket'>Корзина</label>
                                 </li>
                             </ul> 
@@ -87,11 +103,21 @@
                 <div class='wrapper-breadcrumbs'>
                     <h3>Сортировать:</h3>
                     <ul class='breadcrumbs'>
-                        <li class='breadcrumbs-current'>По цене</li>
+                        <li>По цене</li>
                         <li><a href='#'>По типу</a></li>
                         <li><a href='#'>По названию</a></li>
-                        <li class='breadcrumbs-current'>Вниз</li>
-                        <li><a href='#'>Вверх</a></li>
+                        <li>
+                                <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.5 10L0 0H11" fill="#231F20"/>
+                                </svg> 
+                        </li>
+                        <li class='breadcrumbs-up'>
+                            <a>
+                                <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.5 0L0 10H11L5.5 0Z" fill="#231F20"/>
+                                </svg>
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <section class='catalog-list'>
@@ -135,6 +161,7 @@
         </div>
     </main>
     <footer class='main-footer'>
+        <div class='footer-wrapper'>
         <section class='footer-contacts'>
           <h2 class='visually-hidden'>Контакты</h2>
           <img src='img/content/map.jpg' width='1440' height='416' alt='Карта'>
@@ -148,7 +175,7 @@
         </section>
         <section class='footer-social'>
           <h2 class='visually-hidden'>Социальные сети</h2>
-          <div class='footer-wrapper'>
+          <div class='footer-container'>
             <div class='social-wrapper'>
               <ul class='social-list'>
                 <li><a href='#'><img src='img/social/vk-icon.svg' width='26' height='15' alt='vk'></a></li>
@@ -164,6 +191,7 @@
             </div>
           </div>
         </section>
+        </div>
       </footer>
     </body>
 </html>
