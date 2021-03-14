@@ -197,35 +197,29 @@
                                 </div>
                             </li>
                         </ul>
-                    
-                    <div class='pagination'>
                         <ul class='pagination-list'>
-                            <li class='pagination-current'>1</li>
-                            <li><a href='blank.html'>2</a></li>
-                            <li><a href='blank.html'>3</a></li>
-                            <li class='pagination-next'><a href='blank.html'>Следующая</a></li>
+                            <li class='pagination-item pagination-current'>1</li>
+                            <li class='pagination-item'><a href='blank.html'>2</a></li>
+                            <li class='pagination-item'><a href='blank.html'>3</a></li>
+                            <li class='pagination-item> pagination-next'><a href='blank.html'>Следующая</a></li>
                         </ul>
-                    </div>
                 </section>
             </section>
         </div>
     </main>
     <footer class='main-footer'>
         <section class='footer-map'>
-          <h2 class='visually-hidden'>Контакты</h2>
-          <iframe class='on-map' src="https://yandex.ru/map-widget/v1/?um=constructor%3A0da719b83099ced85a7360a81502c2350b32536cdaef0779f9d6f8efe23a999d&amp;source=constructor" width="1440" height="416"></iframe>
-          <!-- <img class='map-marker' src='img/content/map-marker.png' width='231' height='190' alt='Маркер'> -->
-          <div class='footer-contacts-wrapper'>
+          <h2 class='visually-hidden'>Контакты</h2>                   
           <div class='footer-map-wrapper'>
-            <div class='footer-contacts'>
-                <h3 class='footer-contacts-title'>Nёrds design studio</h3>
-                <p class='contacts-adress'>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
-                <p class='contacts-phone'><a class='footer-phone' href='tel:+78122757575'>тел. +7 (812) 275-75-75</a></p>
-                <a class='button button-contacts' href='#'>Напишите нам</a>
-            </div>
+              <div class='footer-contacts'>
+                  <h3 class='footer-contacts-title'>Nёrds design studio</h3>
+                  <p class='contacts-adress'>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
+                  <p class='contacts-phone'><a class='footer-phone' href='tel:+78122757575'>тел. +7 (812) 275-75-75</a></p>
+                  <a class='button button-contacts modal-link' href='#'>Напишите нам</a>
+              </div>
           </div>
-        </div>
-        </section>
+          <iframe class='on-map' src='https://yandex.ru/map-widget/v1/?um=constructor%3A0da719b83099ced85a7360a81502c2350b32536cdaef0779f9d6f8efe23a999d&amp;source=constructor' width='1440' height='416'></iframe>
+      </section>
         <div class='footer-wrapper'>
         <section class='footer-social'>
           <h2 class='visually-hidden'>Социальные сети</h2>
@@ -237,15 +231,35 @@
                 <li><a href='#'><img src='img/social/insta-icon.svg' width='21' height='21' alt='instagram'></a></li>
               </ul>
             </div>
-            <div class='slogan-wrapper'>
-              <div class="footer-slogan">
-                <p class='slogan-desc'>Давайте дружить, это выгодно!</p>
-                <p>Скидка 10% для друзей из социальных сетей.</p>
+              <div class='footer-slogan'>
+                <p class='slogan-title'>Давайте дружить, это выгодно!</p>
+                <p class='slogan-desc'>Скидка 10% для друзей из социальных сетей.</p>
               </div>
-            </div>
           </div>
         </section>
         </div>
       </footer>
+  
+      <section class='modal'>
+          <form class='feedback-form'>
+            <h2 class='modal-title'>Напишите нам</h2>
+            <div class='info-wrapper'>            
+              <label class='feedback-form-label' for='modal-name'>Ваше имя:
+                <input class='modal-form-input input-name-user' type='name' name='name' id='modal-name' placeholder='Имя Фамилия' required>
+              </label>
+  
+              <label class='feedback-form-label' for='modal-email'>Ваш email:
+                <input class='modal-form-input input-email-user' type='email' name='email' id='modal-email' placeholder='email@example.com' required> 
+              </label>
+  
+              <label class='feedback-form-label' for='modal-text'>Текст письма:
+                  <textarea class='feedback-modal-textarea'name='text' id='modal-text' placeholder='В свободной форме' rows='3'></textarea>
+              </label>
+            </div>
+            <input class='button button-form' type='submit' value='Отправить'>
+          </form>
+          <button class='page-modal-button button-close' aria-label='Закрыть' type='button'></button>
+      </section>
+      <script src='js/popup.js'></script>
     </body>
-</html>
+  </html>
