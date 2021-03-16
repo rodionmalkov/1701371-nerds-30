@@ -28,10 +28,30 @@
         </div>
       </nav>
       <section class='page-subtitle'>
-        <h1 class='page-title'>Страница находится в разработке</h1>
+        <h1 class='page-title'>Напишите нам</h1>
       </section>
     </header>
-    <main class='wrapper'></main>
+    <main class='wrapper'>
+      <section class='modal modal-show'>
+        <form class='feedback-form'>
+          <h2 class='modal-title'>Напишите нам</h2>
+          <div class='info-wrapper'>            
+            <label class='feedback-form-label' for='no-js-modal-name'>Ваше имя:
+              <input class='modal-form-input input-name-user' type='text' name='name' id='no-js-modal-name' placeholder='Имя Фамилия' required>
+            </label>
+            <label class='feedback-form-label' for='no-js-modal-email'>Ваш email:
+              <input class='modal-form-input input-email-user' type='email' name='email' id='no-js-modal-email' placeholder='email@example.com' required> 
+            </label>
+  
+            <label class='feedback-form-label' for='no-js-modal-text'>Текст письма:
+              <textarea class='feedback-modal-textarea' name='text' id='no-js-modal-text' placeholder='В свободной форме' rows='3'></textarea>
+            </label>
+          </div>
+          <input class='button button-form' type='submit' value='Отправить'>
+        </form>
+        <button class='page-modal-button button-close' aria-label='Закрыть' type='button'></button>
+      </section>
+    </main>
     <footer class='main-footer'>
       <section class='footer-map'>
         <h2 class='visually-hidden'>Контакты</h2>                   
